@@ -33,6 +33,7 @@ class SummaryViewController: UIViewController {
         title = "Summary"
         
         view.addSubview(text)
+//        view.addSubview(productImage)
         
         text.text = result.roast
         text.font = .systemFont(ofSize: 17, weight: .medium)
@@ -40,8 +41,10 @@ class SummaryViewController: UIViewController {
         text.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            text.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            text.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            text.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            text.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            text.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+            
         ])
         
         
