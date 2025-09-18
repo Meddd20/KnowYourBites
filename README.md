@@ -21,15 +21,15 @@ An IOS application that helps you analyze composition and nutrition facts of a p
     - Add a fun roast criticized the product
 
 ## Tech Stack 🛠
--- **UIKit** (programmatic UI)
--- **AVFoundation** (Camera capture, torch, focus)
--- **Vision** (OCR text recognition)
--- **FirebaseAI (Gemini)** (LLM validation & summary)
+- **UIKit** (programmatic UI)
+- **AVFoundation** (Camera capture, torch, focus)
+- **Vision** (OCR text recognition)
+- **FirebaseAI (Gemini)** (LLM validation & summary)
 
 ## Architecture 🏗
 The app follows **MVVM Architecture**
--- **Model** → OCR result, nutrition & composition struct, Gemini responses
--- **View** → UIKit `UIViewController` (Camera, Loading, Summary)
--- **ViewModel** → Not Yet
+- **Model** → OCR result, nutrition & composition struct, Gemini responses
+- **View** → UIKit `UIViewController` (Camera, Loading, Summary)
+- **ViewModel** → Not Yet
 
 
